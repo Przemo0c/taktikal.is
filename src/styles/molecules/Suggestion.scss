@@ -1,0 +1,41 @@
+.suggestion {
+  text-align: left;
+  padding: 10px 16px;
+  border-radius: 5px;
+
+  transition: 0.7s;
+  animation-timing-function: 0.5s;
+
+  &.active,
+  &:hover {
+    background-color: $background-color;
+    cursor: pointer;
+  }
+
+  .suggestion-container {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+
+    .name-text {
+      font-size: 16px;
+      line-height: 30.17px;
+      font-family: $font-family-primary;
+      color: $text-color;
+    }
+
+    .email-text {
+      font-size: 14px;
+      line-height: 26.4px;
+      font-family: $font-family-primary;
+      color: $text-color-secondary;
+    }
+
+    .no-record-text {
+      font-size: 16px;
+      line-height: 30.17px;
+      font-family: $font-family-primary;
+      color: $text-color-secondary;
+    }
+  }
+}

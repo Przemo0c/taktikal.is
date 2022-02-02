@@ -1,0 +1,12 @@
+@import "./fonts.scss";
+@import "./variables.scss";
+
+//Atoms
+//Molecules
+@import "./molecules/Suggestion.scss";
+@import "./molecules/Inforgraphic.scss";
+
+
+//Organisms
+@import "./organisms/index.scss";
+@import "./organisms/InputField.scss";

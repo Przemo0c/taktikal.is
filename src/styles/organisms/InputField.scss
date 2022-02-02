@@ -1,0 +1,59 @@
+.inputfield {
+  position: relative;
+  max-width: 314px;
+  height: 56px;
+  width: 100%;
+
+  //@at-root
+  left: 50%;
+  transform: translateX(-50%);
+  top: 20px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .field-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    input {
+      &[type="text"] {
+        width: 100%;
+        height: 100%;
+        background-color: $background-color;
+        border: 1px solid $secondary-color;
+        border-radius: 5px;
+        padding-left: 48px;
+        font-size: 16px;
+        line-height: 163.41%;
+        font-family: $font-family-primary;
+        font-weight: 300;
+        color: $text-color;
+
+        &::placeholder {
+          color: $text-color-secondary;
+        }
+
+        &:active,
+        &:focus {
+          border-color: $blue-color;
+          outline: none;
+        }
+      }
+    }
+  }
+
+  .suggestion-list {
+    position: absolute;
+    top: calc(100% + 11px);
+    width: 100%;
+    max-width: 314px;
+    border-radius: 5px;
+    box-shadow: 0 8px 18px $shadow-color;
+    padding: 8px;
+    list-style: none;
+  }
+}
